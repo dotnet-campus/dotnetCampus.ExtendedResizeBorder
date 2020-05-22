@@ -25,7 +25,8 @@ namespace ExtendedResizeBorder
             WindowStyle = WindowStyle.None;
             WindowChrome.SetWindowChrome(this, new WindowChrome()
             {
-                GlassFrameThickness = new Thickness(-1)
+                GlassFrameThickness = new Thickness(-1),
+                CaptionHeight = 0
             });
             SnapsToDevicePixels = true;
 

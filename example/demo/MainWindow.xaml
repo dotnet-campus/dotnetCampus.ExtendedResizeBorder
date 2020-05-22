@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <extendedResizeBorder:ExtendedResizeBorder.ExtendedResizeBorder>
-        <extendedResizeBorder:ExtendedResizeBorder Radius="20" />
+        <extendedResizeBorder:ExtendedResizeBorder Radius="100" />
     </extendedResizeBorder:ExtendedResizeBorder.ExtendedResizeBorder>
     <Grid Background="Transparent" MouseDown="UIElement_OnMouseDown">
         <Grid Margin="100" Background="White" />
