@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <TargetFrameworks>net45;netcoreapp3.0</TargetFrameworks>
+        <UseWpf>True</UseWpf>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    </ItemGroup>
+
+</Project>
