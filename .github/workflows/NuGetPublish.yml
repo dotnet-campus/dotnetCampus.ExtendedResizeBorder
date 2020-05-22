@@ -1,0 +1,32 @@
+name: NuGet Publish
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.202
+
+    - name: Install Nuget
+      uses: nuget/setup-nuget@v1
+      with:
+        nuget-version: '5.x'
+
+    - name: Restore
+      run: dotnet restore
+
+    - name: Pack
+      run: dotnet pack src\ExtendedResizeBorder\ExtendedResizeBorder.csproj -c release
+
+    - name: Publish 
+      run: nuget push .\src\ExtendedResizeBorder\bin\release\*.nupkg -Source https://api.nuget.org/v3/index.json -SkipDuplicate -ApiKey ${{ secrets.NugetKey }} -NoSymbols
+
