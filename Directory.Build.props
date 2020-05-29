@@ -1,0 +1,17 @@
+<Project>
+  <Import Project="build\Version.props" />
+  <PropertyGroup>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)bin\$(Configuration)</PackageOutputPath>
+    <Authors>dotnet-campus</Authors>
+    <Company>dotnet-campus</Company>
+    <LangVersion>latest</LangVersion>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Description>Enable WPF window has an outside resizable border.</Description>
+    <Copyright>Copyright (c) 2020 dotnet-campus</Copyright>
+    <PackageProjectUrl>https://github.com/dotnet-campus/dotnetCampus.ExtendedResizeBorder</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dotnet-campus/dotnetCampus.ExtendedResizeBorder</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>source;dotnet;wpf;</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+</Project>
