@@ -21,8 +21,8 @@ jobs:
       with:
         nuget-version: '5.x'
 
-    - name: Restore
-      run: dotnet restore
+    - name: Build
+      run: dotnet build -c release
 
     - name: Pack
       run: dotnet pack src\ExtendedResizeBorder\ExtendedResizeBorder.csproj -c release
